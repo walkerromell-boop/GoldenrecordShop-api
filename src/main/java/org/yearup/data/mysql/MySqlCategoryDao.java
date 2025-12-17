@@ -21,7 +21,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao {
         // get all categories
         String query = """
         SELECT category_id, name, description
-        FROM products;
+        FROM categories;
         """;
 
         try (Connection connection = getConnection();
@@ -65,7 +65,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao {
 
                 if (resultSet.next()) {
                     return new Category(
-                            resultSet.getInt("categoryId"),
+                            resultSet.getInt("category_Id"),
                             resultSet.getString("name"),
                             resultSet.getString("description")
                     );
