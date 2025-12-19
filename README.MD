@@ -77,11 +77,9 @@ sqlCREATE DATABASE easyshop;
 
 Run one of the provided SQL scripts from the database/ folder:
 
-create_database_easyshop.sql - Electronics/Fashion/Home & Kitchen store
-create_database_clothingstore.sql - Clothing store
-create_database_groceryapp.sql - Grocery store
+
 create_database_recordshop.sql - Music store
-create_database_videogamestore.sql - Video game store
+
 
 
 
@@ -109,14 +107,14 @@ The application comes with pre-configured test users:
 Admin User
 
 Username: admin
-Password: password
+Password: 
 Role: ROLE_ADMIN
 
 
 Regular User
 
 Username: user
-Password: password
+Password: 
 Role: ROLE_USER
 
 
