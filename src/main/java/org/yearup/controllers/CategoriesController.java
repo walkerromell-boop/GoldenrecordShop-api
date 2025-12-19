@@ -76,7 +76,7 @@ public class CategoriesController {
         try {
             return categoryDao.create(category);
         } catch (Exception ex) {
-            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Sorry");
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Sorry no cookies here");
         }
     }
 
