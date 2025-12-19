@@ -75,7 +75,7 @@ public class MySqlShoppingCartDao extends MySqlDaoBase implements ShoppingCartDa
         } catch (SQLException e) {
             throw new RuntimeException("Error adding product to cart", e);
         }
-        return null;
+        return getByUserId(userId);
     }
 
     public void updateProductQuantity(int userId, int productId, int quantity) {

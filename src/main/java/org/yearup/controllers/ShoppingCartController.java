@@ -92,9 +92,8 @@ public class ShoppingCartController
             User user = userDao.getByUserName(userName);
             int userId = user.getId();
 
-            ShoppingCart cart = shoppingCartDao.getByUserId(userId);
-
-            return shoppingCartDao.addProductToCart(userId,productId);
+            // Just call addProductToCart - it now returns the cart
+            return shoppingCartDao.addProductToCart(userId, productId);
         }
         catch(Exception e)
         {
