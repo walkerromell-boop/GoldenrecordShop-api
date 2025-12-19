@@ -1,4 +1,4 @@
-EasyShop E-Commerce Backend API
+# EasyShop E-Commerce Backend API
 A full-stack e-commerce REST API built with Spring Boot, featuring JWT authentication, shopping cart functionality, and comprehensive product and category management.
 Project Overview
 EasyShop is a backend API for an e-commerce platform that supports multiple store types (clothing, electronics, groceries, records, and video games). The application provides secure user authentication, product browsing, category management, and shopping cart operations.
@@ -12,7 +12,7 @@ Shopping Cart - Add, update, remove items and view cart totals
 User Profiles - User registration and profile management
 Multiple Store Databases - Support for different store types (clothing, electronics, etc.)
 
-Technologies Used
+## Technologies Used
 
 Spring Boot 2.7.3 - Application framework
 Spring Security - Authentication and authorization
@@ -38,7 +38,7 @@ Authentication
 POST /login - User login (returns JWT token)
 POST /register - User registration
 
-Categories
+## Categories
 
 GET /categories - Get all categories
 GET /categories/{id} - Get category by ID
@@ -47,7 +47,7 @@ POST /categories - Create category (Admin only)
 PUT /categories/{id} - Update category (Admin only)
 DELETE /categories/{id} - Delete category (Admin only)
 
-Products
+## Products
 
 GET /products - Search products (supports filtering by category, price range, subcategory)
 GET /products/{id} - Get product by ID
@@ -55,7 +55,7 @@ POST /products - Create product (Admin only)
 PUT /products/{id} - Update product (Admin only)
 DELETE /products/{id} - Delete product (Admin only)
 
-Shopping Cart
+## Shopping Cart
 
 GET /cart - Get user's shopping cart
 POST /cart/products/{productId} - Add product to cart
@@ -71,7 +71,7 @@ Maven 3.6 or higher
 
 Database Setup
 
-Create a MySQL database:
+## Create a MySQL database:
 
 sqlCREATE DATABASE easyshop;
 
@@ -83,7 +83,7 @@ create_database_recordshop.sql - Music store
 
 
 
-Application Configuration
+## Application Configuration
 Update src/main/resources/application.properties:
 propertiesdatasource.url=jdbc:mysql://localhost:3306/easyshop
 datasource.username=root
@@ -119,10 +119,10 @@ Role: ROLE_USER
 
 
 
-Testing
+### Testing
 Run tests with Maven:
 bash./mvnw test
-```
+
 
 Test configuration is in `src/test/resources/application.properties`
 
@@ -165,6 +165,7 @@ src/
 │   └── resources/
 │       └── application.properties
 └── test/                     # Unit tests
+```
 Contributing
 This project was developed as a capstone project. Key features implemented:
 
